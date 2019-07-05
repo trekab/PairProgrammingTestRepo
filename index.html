@@ -15,29 +15,39 @@
         <label id="name-label">Name</label><input type="text" name="Name" id="name" placeholder="Enter your name" required="True"><br>
         <label id="email-label">Email</label><input type="email" name="email" id="email" required="True" placeholder="Enter your email"><br>
         <label id="number-label">Age</label><input type="number" name="Age" id="number" min="1" max="125" placeholder="Age"><br>
-        <label>Which option best describes your current role? </label><select id="dropdown">
-        	<option disabled="" value="">Select an option</option>
-			<option value="student">Student</option>
-			<option value="job">Full Time Job</option>
-			<option value="learner">Full Time Learner</option>
-			<option value="preferNo">Prefer not to say</option>
-			<option value="other">Other</option>
-		</select><br>
-		<label>How likely is that you would recommend freeCodeCamp to a friend?</label><br>
-			<input type="radio" name="radiobuttons" value="Definitely">Definitely<br>
-			<input type="radio" name="radiobuttons" value="May be">May be<br>
-			<input type="radio" name="radiobuttons" value="Not sure">Not sure<br>
-		<label>Things that should be improved in the future(Check all that apply):</label>
-			<input type="checkbox" name="checkboxoptions" value="attribute">Front-end Projects<br>
-			<input type="checkbox" name="checkboxoptions" value="attribute">Back-end Projects<br>
-			<input type="checkbox" name="checkboxoptions" value="attribute">Data visualisation<br>
+        <label>Which option best describes your current role? </label>
+        <select id="dropdown">
+            <option disabled="" value="">Select an option</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+        </select><br>
+        <div class="rowTab">
+            <label>How likely is that you would recommend freeCodeCamp to a friend?</label><br>
+            <div class="rightTab">
+                <ul>
+                <li><input type="radio" name="radiobuttons" value="Definitely"><label>Definitely</label></li>
+                <li><input type="radio" name="radiobuttons" value="May be"><label>May be</label></li>
+                <li><input type="radio" name="radiobuttons" value="Not sure"><label>Not sure</label></li>
+            </ul>
+            </div>
+        </div>
+        <div class="rowTab">
+            <label>Things that should be improved in the future(Check all that apply):</label>
+            <div class="rightTab">
+                <ul>
+                    <li><input type="checkbox" name="checkboxoptions" value="attribute"><label>Front-end Projects</label>
+                    </li>
+                    <li><input type="checkbox" name="checkboxoptions" value="attribute"><label>Back-end Projects<label></li>
+                    <li><input type="checkbox" name="checkboxoptions" value="attribute"><label>Data visualisation<label></li>
+                </ul>
+            </div>
+        </div>
         <label>Any Comments or Suggestions?</label>
         <textarea id="comments" placeholder="Enter your comments here"></textarea><br>
-        <button id="submit">Submit</button>  
-
-
-
-
+        <button id="submit">Submit</button>
     </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script src="js/index.js"></script>
